@@ -1,75 +1,85 @@
 # NebulaEQ
-NebulaEQ is a space-inspired audio EQ plugin built for clarity, tone shaping, and creative sound exploration. It is designed to be simple to use while still offering depth for experimentation.
 
-This project is open source and intended for both producers and developers.
+NebulaEQ is a space-inspired audio EQ plugin designed for clarity, tone shaping, and creative sound exploration. It is built to feel simple on the surface while offering depth for those who want to push frequencies beyond the ordinary.
 
-⸻
+NebulaEQ is an open-source project created for producers and developers who enjoy experimentation.
 
-Features
-	•	Clean and musical EQ design
-	•	Smooth frequency shaping for mixing and sound design
-	•	Simple, intuitive controls
-	•	Lightweight and responsive
-	•	Built for experimentation and learning
+---
 
-⸻
+## Features
 
-Philosophy
+- Musical and transparent EQ design
+- Smooth frequency shaping for mixing and sound design
+- Simple controls with creative flexibility
+- Lightweight and responsive
+- Built for experimentation and learning
 
-NebulaEQ is built around a simple idea:
+NebulaEQ is designed to sound good when pushed, not just when used gently.
 
-Good tools disappear when you use them.
+---
 
-There is no correct way to use this plugin. If it sounds wrong, you are probably close. If it sounds perfect, try pushing it further.
+## Philosophy
 
-⸻
+NebulaEQ was built around one idea:
 
-Getting Started
-	1.	Clone the repository
-	2.	Open the project in your preferred IDE
-	3.	Build using your audio framework or toolchain
-	4.	Load NebulaEQ into your DAW
-	5.	Start shaping sound
+Clarity creates space.
 
-⸻
+Sometimes EQ is about fixing problems. Sometimes it is about discovery. NebulaEQ lives between precision and creativity, encouraging subtle moves or bold decisions depending on where the sound leads.
 
-Development
+If it sounds wrong, you are probably close.  
+If it sounds perfect, try pushing it further.
+
+---
+
+## Getting Started
+
+1. Clone the repository
+2. Open the project in your preferred IDE
+3. Build using your audio framework or toolchain
+4. Load NebulaEQ into your DAW
+5. Start shaping sound
+
+---
+
+## Development
 
 This repository contains the full source code for NebulaEQ.
 
 Project goals:
-	•	Keep the code readable and approachable
-	•	Encourage experimentation
-	•	Support learning and iteration
+- Keep the code readable and approachable
+- Encourage experimentation with EQ
+- Support learning in audio plugin development
 
-⸻
+---
 
-Contributing
+## Contributing
 
 Contributions are welcome.
 
-Possible contributions include:
-	•	DSP improvements
-	•	UI or UX enhancements
-	•	Performance optimizations
-	•	Documentation updates
+Ideas for contributions:
+- DSP improvements
+- UI or UX enhancements
+- Performance optimizations
+- Documentation updates
 
-If you are learning audio plugin development, this project is a good place to experiment.
+If you are learning audio plugin development, NebulaEQ is designed to be easy to explore and modify.
 
-⸻
+---
 
-License
+## License
 
 This project is open source. See the LICENSE file for details.
 
-⸻
+---
 
-Final Note
+## Final Note
 
 NebulaEQ is meant to be explored.
 
-Turn the knobs too far. Automate what was not meant to move. Break it, rebuild it, and make something new.
+Boost too much.
+Cut too far.
+Automate what was not meant to move.
 
-Enjoy the sound.
+Use your ears and trust the sound.
 
 CK Audio Design
