@@ -4,9 +4,26 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" cppLanguageStandard="17"
               pluginChannelConfigs="{2, 2}" companyWebsite="www.example.com"
               companyName="CK Audio Design" companyCopyright="2025" pluginManufacturerCode="CKAD"
-              pluginCode="NbEQ" pluginName="NebulaEQ" pluginDesc="5-Band Parametric Equalizer">
+              pluginCode="NbEQ" pluginName="NebulaEQ" pluginDesc="5-Band Parametric Equalizer"
+              pluginFormats="buildVST3,buildAU,buildAAX,buildStandalone">
   <MAINGROUP id="jXVMvd" name="NebulaEQ">
     <GROUP id="{9599FCC3-1EB7-A668-23ED-93BE4AF42C8A}" name="Source">
+      <FILE id="m5Z7y4" name="LEDBarMeter.cpp" compile="1" resource="0"
+            file="Source/LEDBarMeter.cpp"/>
+      <FILE id="kJjU3B" name="LEDBarMeter.h" compile="0" resource="0"
+            file="Source/LEDBarMeter.h"/>
+      <FILE id="g9W2Zx" name="FrequencyResponseComponent.cpp" compile="1" resource="0"
+            file="Source/FrequencyResponseComponent.cpp"/>
+      <FILE id="S2h8Rp" name="FrequencyResponseComponent.h" compile="0" resource="0"
+            file="Source/FrequencyResponseComponent.h"/>
+      <FILE id="Qp6VtA" name="NebulaEQLookAndFeel.cpp" compile="1" resource="0"
+            file="Source/NebulaEQLookAndFeel.cpp"/>
+      <FILE id="uL4nYb" name="NebulaEQLookAndFeel.h" compile="0" resource="0"
+            file="Source/NebulaEQLookAndFeel.h"/>
+      <FILE id="xR8wMn" name="NebulaEQComponent.cpp" compile="1" resource="0"
+            file="Source/NebulaEQComponent.cpp"/>
+      <FILE id="aT1qPd" name="NebulaEQComponent.h" compile="0" resource="0"
+            file="Source/NebulaEQComponent.h"/>
       <FILE id="gYswd1" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="L35aMz" name="PluginProcessor.h" compile="0" resource="0"
@@ -14,6 +31,8 @@
       <FILE id="SoUkjD" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
       <FILE id="uzM97Y" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="vR3uP1" name="reset_arrow.png" compile="0" resource="1"
+            file="Resources/reset_arrow.png"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>

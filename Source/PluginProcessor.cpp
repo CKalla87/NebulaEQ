@@ -272,7 +272,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout NebulaEQAudioProcessor::crea
     ));
     params.push_back (std::make_unique<juce::AudioParameterFloat>(
         juce::ParameterID ("LOW_GAIN", 1), "Low Gain",
-        juce::NormalisableRange<float> (-24.0f, 24.0f, 0.1f),
+        juce::NormalisableRange<float> (-12.0f, 12.0f, 0.5f),
         0.0f, "dB"
     ));
 
@@ -284,7 +284,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout NebulaEQAudioProcessor::crea
     ));
     params.push_back (std::make_unique<juce::AudioParameterFloat>(
         juce::ParameterID ("LOWMID_GAIN", 1), "Low-Mid Gain",
-        juce::NormalisableRange<float> (-24.0f, 24.0f, 0.1f),
+        juce::NormalisableRange<float> (-12.0f, 12.0f, 0.5f),
         0.0f, "dB"
     ));
 
@@ -296,7 +296,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout NebulaEQAudioProcessor::crea
     ));
     params.push_back (std::make_unique<juce::AudioParameterFloat>(
         juce::ParameterID ("MID_GAIN", 1), "Mid Gain",
-        juce::NormalisableRange<float> (-24.0f, 24.0f, 0.1f),
+        juce::NormalisableRange<float> (-12.0f, 12.0f, 0.5f),
         0.0f, "dB"
     ));
 
@@ -308,7 +308,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout NebulaEQAudioProcessor::crea
     ));
     params.push_back (std::make_unique<juce::AudioParameterFloat>(
         juce::ParameterID ("HIGHMID_GAIN", 1), "High-Mid Gain",
-        juce::NormalisableRange<float> (-24.0f, 24.0f, 0.1f),
+        juce::NormalisableRange<float> (-12.0f, 12.0f, 0.5f),
         0.0f, "dB"
     ));
 
@@ -320,7 +320,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout NebulaEQAudioProcessor::crea
     ));
     params.push_back (std::make_unique<juce::AudioParameterFloat>(
         juce::ParameterID ("HIGH_GAIN", 1), "High Gain",
-        juce::NormalisableRange<float> (-24.0f, 24.0f, 0.1f),
+        juce::NormalisableRange<float> (-12.0f, 12.0f, 0.5f),
         0.0f, "dB"
     ));
 
