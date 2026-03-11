@@ -6,17 +6,18 @@
 
 1. **Open the Xcode project:**
    ```bash
-   open "Builds/MacOSX/MyVSTPlugin.xcodeproj"
+   open "Builds/MacOSX/NebulaEQ.xcodeproj"
    ```
 
 2. **In Xcode:**
-   - Select the **"MyVSTPlugin - All"** scheme from the scheme dropdown (top toolbar)
+   - Select the **"NebulaEQ - All"** scheme from the scheme dropdown (top toolbar)
    - Select **"Debug"** configuration
    - Press **⌘B** (Cmd+B) to build, or go to **Product → Build**
 
 3. **The plugin will be automatically copied to your plugin directories:**
-   - VST3: `~/Library/Audio/Plug-Ins/VST3/MyVSTPlugin.vst3`
-   - AU: `~/Library/Audio/Plug-Ins/Components/MyVSTPlugin.component`
+   - VST3: `~/Library/Audio/Plug-Ins/VST3/NebulaEQ.vst3`
+   - AU: `~/Library/Audio/Plug-Ins/Components/NebulaEQ.component`
+   - AAX: `~/Library/Application Support/Avid/Audio/Plug-Ins/NebulaEQ.aaxplugin`
 
 4. **Rescan plugins in your DAW** and NebulaEQ should appear!
 
@@ -24,7 +25,12 @@
 
 ```bash
 cd "Builds/MacOSX"
-xcodebuild -project MyVSTPlugin.xcodeproj -scheme "MyVSTPlugin - All" -configuration Debug build
+xcodebuild -project NebulaEQ.xcodeproj -scheme "NebulaEQ - All" -configuration Debug build
+```
+
+To build AAX only:
+```bash
+xcodebuild -project NebulaEQ.xcodeproj -scheme "NebulaEQ - AAX" -configuration Debug build
 ```
 
 ## Loading in Your DAW
@@ -32,6 +38,7 @@ xcodebuild -project MyVSTPlugin.xcodeproj -scheme "MyVSTPlugin - All" -configura
 ### Supported Formats:
 - **VST3** (recommended for most DAWs)
 - **AU** (Audio Unit - macOS only, works in Logic Pro, GarageBand, etc.)
+- **AAX** (for Pro Tools; use the "NebulaEQ - AAX" scheme)
 
 ### Common DAWs:
 
@@ -53,11 +60,12 @@ xcodebuild -project MyVSTPlugin.xcodeproj -scheme "MyVSTPlugin - All" -configura
 3. Look for **NebulaEQ** in your VST3 plugins
 
 #### Pro Tools:
-1. Pro Tools supports AAX format (requires separate build configuration)
-2. For VST3, you may need to use a VST-to-AAX wrapper
+1. Build the plugin with the **"NebulaEQ - AAX"** scheme
+2. Install the `.aaxplugin` bundle to `~/Library/Application Support/Avid/Audio/Plug-Ins/` or `/Library/Application Support/Avid/Audio/Plug-Ins/`
+3. Note: For commercial Pro Tools (non-Developer), AAX plugins must be signed; use Pro Tools Developer for testing unsigned builds
 
 #### Other DAWs:
-- Look for **NebulaEQ** or **MyVSTPlugin** in your VST3 or AU plugin list
+- Look for **NebulaEQ** in your VST3, AU, or AAX plugin list
 - The plugin should appear in the plugin browser/menu
 
 ## Troubleshooting
@@ -66,8 +74,9 @@ xcodebuild -project MyVSTPlugin.xcodeproj -scheme "MyVSTPlugin - All" -configura
 1. **Make sure you've built the plugin successfully** (check for errors in Xcode)
 2. **Rescan plugins** in your DAW (usually in Preferences/Settings → Plug-ins)
 3. **Check the plugin location:**
-   - VST3: `~/Library/Audio/Plug-Ins/VST3/MyVSTPlugin.vst3`
-   - AU: `~/Library/Audio/Plug-Ins/Components/MyVSTPlugin.component`
+   - VST3: `~/Library/Audio/Plug-Ins/VST3/NebulaEQ.vst3`
+   - AU: `~/Library/Audio/Plug-Ins/Components/NebulaEQ.component`
+   - AAX: `~/Library/Application Support/Avid/Audio/Plug-Ins/NebulaEQ.aaxplugin`
 4. **Restart your DAW** after building
 
 ### Plugin crashes:
