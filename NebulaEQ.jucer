@@ -2,10 +2,11 @@
 
 <JUCERPROJECT id="MyVST1" name="NebulaEQ" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" cppLanguageStandard="17"
-              pluginChannelConfigs="{2, 2}" companyWebsite="www.example.com"
+              pluginChannelConfigs="{1, 1}, {2, 2}" companyWebsite="www.example.com"
               companyName="CK Audio Design" companyCopyright="2025" pluginManufacturerCode="CKAD"
               pluginCode="NbEQ" pluginName="NebulaEQ" pluginDesc="5-Band Parametric Equalizer"
-              pluginFormats="buildVST3,buildAU,buildAAX,buildStandalone">
+              pluginFormats="buildVST3,buildAU,buildAAX,buildStandalone"
+              pluginAAXCategory="1">
   <MAINGROUP id="jXVMvd" name="NebulaEQ">
     <GROUP id="{9599FCC3-1EB7-A668-23ED-93BE4AF42C8A}" name="Source">
       <FILE id="m5Z7y4" name="LEDBarMeter.cpp" compile="1" resource="0"
